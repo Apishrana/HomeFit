@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+.nav-link-list {
+    padding: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-link-item {
+    display: flex;
+    border-radius: 5px;
+    margin-left: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link-item:hover {
+    background-color: rgb(174, 174, 174);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-link-link {
+    color: black;
+    text-decoration: inherit;
+    padding: 0.75em;
+}
+
+.sign-in-btn {
+    width: 100px;
+}
