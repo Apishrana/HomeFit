@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
             RightMove - UK's number one property website for properties for sale
             and to rent
@@ -10,41 +10,109 @@
         <link rel="shortcut icon" href="../assets/Logo.ico" />
         <link rel="stylesheet" href="styles.css" />
         <link
-            rel="stylesheet"
-            href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+            href="https://fonts.googleapis.com/css?family=Itim"
+            rel="stylesheet" />
     </head>
     <body>
         <header>
             <nav class="nav">
-                <img class="logo" src="../assets/Logo.png" alt="logo" />
-                <ul class="nav-link-list">
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Buy </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Rent </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> House Prices </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Find Agent </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Commercial </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Inspire </a>
-                    </li>
-                    <li class="nav-link-item">
-                        <a class="nav-link-link" href=""> Overseas </a>
-                    </li>
-                </ul>
-                <button class="sign-in-btn">Sign In</button>
+                <div class="logo-secton">
+                    <img
+                        class="logo-img"
+                        src="../assets/HomeFitlogo.png"
+                        alt="logo" />
+                    <div class="logo-text">HomeFit</div>
+                </div>
+
+                <button class="sign-in-btn">
+                    <img
+                        class="sign-in-img"
+                        src="../assets/Signin.png"
+                        alt="" />
+                    <div class="sign-in-text">Sign In</div>
+                </button>
             </nav>
         </header>
+        <main>
+            <div class="left-text">
+                <div class="main-heading">Find a home that fits you</div>
+                <div class="main-subheading">
+                    Swipe, score, and match with confidence
+                </div>
+                <ul class="features">
+                    <li>Swipe through homes</li>
+                    <li>See a Health Score</li>
+                    <li>Match in minutes</li>
+                </ul>
+                <button class="cta-btn">Start Matching</button>
+            </div>
+            <div class="cards">
+                <div class="card card3">
+                    <img src="" alt="" class="card-img" />
 
+                    <div class="card-disc">
+                        <div class="card-intro">₹28,000 · 2 BHK</div>
+                        <div class="card-health">Health Score: 82</div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <img src="" alt="" class="card-img" />
+
+                    <div class="card-disc">
+                        <div class="card-intro">₹28,000 · 2 BHK</div>
+                        <div class="card-health">Health Score: 82</div>
+                    </div>
+                </div>
+                <div class="card card1">
+                    <img src="" alt="" class="card-img" />
+
+                    <div class="card-disc">
+                        <div class="card-intro">₹28,000 · 2 BHK</div>
+                        <div class="card-health">Health Score: 82</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">HomeFit</a>
+                    <p class="footer-tagline">
+                        Swipe, score, and match with confidence.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="./FooterPages/how-it-works.html"
+                            >How it works</a
+                        >
+                        <a href="./FooterPages/health-score.html"
+                            >Health Score</a
+                        >
+                        <a href="./FooterPages/pricing.html">Pricing</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="./FooterPages/about.html">About</a
+                        ><a href="./FooterPages/careers.html">Careers</a>
+                        <a href="./FooterPages/contact.html">Contact</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="./FooterPages/pricing.html">Privacy Policy</a>
+                        <a href="./FooterPages/terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2025 HomeFit. All rights reserved.
+            </div>
+        </footer>
         <script src="app.js"></script>
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>
