@@ -32,7 +32,7 @@ body {
 
 .logo-img {
     height: 48px;
-    margin: 16px;
+    margin-left: 16px;
 }
 
 .logo-text {
@@ -61,6 +61,20 @@ body {
 .sign-in-img {
     height: 22px;
     margin-right: 6px;
+}
+
+.sign-in-btn:hover {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.sign-in-btn:hover .sign-in-text {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.sign-in-btn:hover .sign-in-img {
+    filter: invert(1);
+    transition: filter 0.3s ease;
 }
 
 /*  MAIN  */
@@ -104,6 +118,12 @@ main {
     border: 1px solid #111;
     background: #fff;
     cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cards {
@@ -231,7 +251,7 @@ main {
     color: #666;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
     main {
         flex-direction: column;
         align-items: center;
@@ -256,5 +276,101 @@ main {
     .footer-links {
         flex-direction: column;
         gap: 24px;
+    }
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+    .card-img {
+        width: 240px;
+        height: 150px;
+    }
+    .cards {
+        top: 70px;
+    }
+    .main-heading {
+        font-size: 36px;
+    }
+    .main-subheading {
+        font-size: 20px;
+    }
+    .features {
+        font-size: 20px;
+    }
+    .cta-btn {
+        font-size: 16px;
+        height: 42px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 260px;
+        height: 260px;
+    }
+    .card-img {
+        width: 208px;
+        height: 130px;
+    }
+    .card-disc {
+        gap: 16px;
+        font-size: 16px;
+    }
+    .cards {
+        top: 100px;
+    }
+    .main-heading {
+        font-size: 28px;
+    }
+    .main-subheading {
+        font-size: 18px;
+    }
+    .features {
+        font-size: 18px;
+    }
+    .cta-btn {
+        font-size: 14px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nav {
+        padding: 0 16px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .sign-in-btn {
+        width: 80px;
+        height: 36px;
+        margin-right: 16px;
+    }
+
+    .sign-in-text {
+        font-size: 12px;
+    }
+
+    main {
+        margin-top: 96px;
+        margin-right: 16px;
+        margin-bottom: 100px;
+    }
+    .card {
+        width: 220px;
+        height: 220px;
+    }
+    .card-img {
+        width: 180px;
+        height: 110px;
+    }
+    .card-disc {
+        gap: 12px;
+        font-size: 14px;
+    }
+    .cards {
+        top: 100px;
     }
 }
