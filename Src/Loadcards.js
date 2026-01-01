@@ -89,24 +89,6 @@ const houseList = [
         healthscore: 95,
         image: '../assets/houses/house10.png',
     },
-    {
-        id: 11,
-        name: 'Temp',
-        location: 'Blr, India',
-        price: '14,000',
-        specifications: 'Studio',
-        healthscore: 42,
-        image: '../assets/houses/house11.png',
-    },
-    {
-        id: 12,
-        name: 'Temp',
-        location: 'Blr, India',
-        price: '32,000',
-        specifications: '2 BHK',
-        healthscore: 80,
-        image: '../assets/houses/house12.png',
-    },
 ];
 
 const usedCardId = [];

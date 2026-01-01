@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+}
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.signup-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 120px;
+    align-items: stretch;
+}
+
+.signup-brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-right: 80px;
+}
+
+.signup-brand::after {
+    content: '';
+    width: 450px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+}
+
+.brand-logo {
+    width: 400px;
+}
+
+.brand-text {
+    font-family: 'Itim';
+    font-size: 78px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.signup-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.signup-form h1 {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.signup-form label {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.signup-form input {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px dashed #aaa;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    height: 42px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    background: #eee;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.signup-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.signup-text {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.signup-text a {
+    color: #1a4cff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .signup-card {
+        padding: 0 80px;
+    }
+    .signup-brand {
+        padding-right: 40px;
+    }
+    .signup-brand::after {
+        width: 350px;
+    }
+    .brand-logo {
+        width: 300px;
+    }
+
+    .brand-text {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 900px) {
+    .signup-form h1 {
+        font-size: 32px;
+    }
+    .signup-card {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    .signup-form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 80%;
+    }
+    .signup-brand {
+        padding-right: 0;
+    }
+}
+@media (max-width: 450px) {
+    .brand-logo {
+        width: 250px;
+    }
+
+    .brand-text {
+        font-size: 48px;
+    }
+    .signup-brand::after {
+        width: 300px;
+    }
+    .signup-form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
