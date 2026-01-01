@@ -19,24 +19,39 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 0 80px;
+    padding-top: 0;
+    padding-right: 80px;
+    padding-bottom: 0;
+    padding-left: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background: #f4f6fb;
     color: #333;
+    justify-content: flex-start;
+}
+.home-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo {
     font-family: 'Itim';
     font-size: 36px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* content */
 
 .page-content {
     max-width: 900px;
-    margin: 160px auto;
-    padding: 0 30px;
+    margin-top: 160px;
+    margin-right: auto;
+    margin-bottom: 160px;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
 }
 
 .page-content h1 {
@@ -46,7 +61,10 @@ body {
 
 .page-content h2 {
     font-size: 28px;
-    margin: 40px 0 10px;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
 }
 
 .page-content p {
@@ -58,7 +76,10 @@ body {
 
 .footer {
     margin-top: auto;
-    padding: 40px 56px 24px;
+    padding-top: 40px;
+    padding-right: 56px;
+    padding-bottom: 24px;
+    padding-left: 56px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
 }
@@ -118,12 +139,14 @@ body {
     pointer-events: none;
     font-weight: bold;
     color: #000;
-    cursor: text;
 }
 
 @media screen and (max-width: 500px) {
     .page-header {
-        padding: 0 30px;
+        padding-top: 0;
+        padding-right: 30px;
+        padding-bottom: 0;
+        padding-left: 30px;
     }
 
     .logo {
