@@ -118,6 +118,7 @@ function newCard() {
     currentCard = randCard();
     console.log(unusedCards);
     console.log(usedCards);
+    console.log(currentCard);
 }
 
 function randCard() {
