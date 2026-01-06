@@ -1,4 +1,4 @@
-const houseList = [
+const allCards = [
     {
         id: 1,
         name: 'Temp',
@@ -91,32 +91,50 @@ const houseList = [
     },
 ];
 
-const usedCardId = [];
+const unusedCards = Array(allCards);
 
-const cardElements = document.getElementsByClassName('card');
+const usedCards = [];
 
-for (let i = 0; i < cardElements.length; i++) {
-    let randomHouse = getRandomHouse();
-    let currentCard = cardElements[i];
-    currentCard.getElementsByClassName('card-img')[0].src = randomHouse.image;
-    currentCard.getElementsByClassName('card-img')[0].alt = randomHouse.image;
-    currentCard
-        .getElementsByClassName('card-disc')[0]
-        .getElementsByClassName('card-info')[0].innerText =
-        '₹ ' + randomHouse.price + ' · ' + randomHouse.specifications;
-    currentCard
-        .getElementsByClassName('card-disc')[0]
-        .getElementsByClassName('card-health')[0].innerText =
-        'Health Score: ' + randomHouse.healthScore;
+const likedCards = [];
+
+const skippedCards = [];
+
+let currentCard = unusedCards[0];
+
+function like() {
+    console.log('Like');
+    newCard();
+}
+function info() {
+    console.log('Info');
+}
+function skip() {
+    console.log('Skip');
+    newCard();
 }
 
-function getRandomHouse() {
-    let randomIndex = Math.floor(Math.random() * houseList.length);
-    let selectedHouse = houseList[randomIndex];
+function newCard() {
+    console.log('Getting new card');
+    currentCard = randCard();
+    console.log(unusedCards);
+    console.log(usedCards);
+}
 
-    if (usedCardId.includes(selectedHouse.id)) {
-        return getRandomHouse();
-    }
-    usedCardId.push(selectedHouse.id);
+function randCard() {
+    let randomIndex = Math.floor(Math.random() * unusedCards.length);
+    let selectedHouse = unusedCards[randomIndex];
+
+    unusedCards.splice(randomIndex, 1);
+    usedCards.push(selectedHouse);
+
+    checkEmptyList();
     return selectedHouse;
+}
+
+function checkEmptyList() {
+    if (unusedCards.length == 0) {
+        allCards.forEach((i) => {
+            unusedCards.push(i);
+        });
+    }
 }
