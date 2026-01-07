@@ -90,8 +90,7 @@ const allCards = [
         image: '../assets/houses/house10.png',
     },
 ];
-
-const unusedCards = Array(allCards);
+const unusedCards = [...allCards];
 
 const usedCards = [];
 
@@ -99,23 +98,37 @@ const likedCards = [];
 
 const skippedCards = [];
 
-let currentCard = unusedCards[0];
+let currentCard;
+
+let nextCard;
 
 function like() {
+    likedCards.push(currentCard);
     console.log('Like');
     newCard();
+
+    setupCards();
 }
 function info() {
     console.log('Info');
 }
 function skip() {
+    skippedCards.push(currentCard);
     console.log('Skip');
     newCard();
+
+    setupCards();
 }
 
 function newCard() {
     console.log('Getting new card');
-    currentCard = randCard();
+    if (!currentCard || !nextCard) {
+        currentCard = randCard();
+        nextCard = randCard();
+    } else {
+        currentCard = nextCard;
+        nextCard = randCard();
+    }
     console.log(unusedCards);
     console.log(usedCards);
     console.log(currentCard);
@@ -139,3 +152,37 @@ function checkEmptyList() {
         });
     }
 }
+
+function setupCards() {
+    newCard();
+    mainCard.getElementsByClassName('card-img')[0].src = currentCard.image;
+    mainCard.getElementsByClassName('card-img')[0].alt = currentCard.image;
+    mainCard
+        .getElementsByClassName('card-disc')[0]
+        .getElementsByClassName('card-info')[0].innerText =
+        '₹ ' + currentCard.price + ' · ' + currentCard.specifications;
+    mainCard
+        .getElementsByClassName('card-disc')[0]
+        .getElementsByClassName('card-health')[0].innerText =
+        'Health Score: ' + currentCard.healthScore;
+
+    subMainCard.getElementsByClassName('card-img')[0].src = nextCard.image;
+    subMainCard.getElementsByClassName('card-img')[0].alt = nextCard.image;
+    subMainCard
+        .getElementsByClassName('card-disc')[0]
+        .getElementsByClassName('card-info')[0].innerText =
+        '₹ ' + nextCard.price + ' · ' + nextCard.specifications;
+    subMainCard
+        .getElementsByClassName('card-disc')[0]
+        .getElementsByClassName('card-health')[0].innerText =
+        'Health Score: ' + nextCard.healthScore;
+}
+
+const domCards = document.getElementsByClassName('card');
+
+let mainCard = domCards[0];
+
+let subMainCard = domCards[1];
+
+newCard();
+setupCards();
