@@ -98,9 +98,9 @@ const likedCards = [];
 
 const skippedCards = [];
 
-let currentCard;
+let currentCard = randCard();
 
-let nextCard;
+let nextCard = randCard();
 
 function like() {
     likedCards.push(currentCard);
@@ -108,7 +108,9 @@ function like() {
     likeAnimation();
     newCard();
 
-    setupCards();
+    setTimeout(() => {
+        setupCards();
+    }, 1500);
 }
 function info() {
     infoAnimation();
@@ -120,21 +122,19 @@ function skip() {
     skipAnimation();
     newCard();
 
-    setupCards();
+    setTimeout(() => {
+        setupCards();
+    }, 1500);
 }
 
 function newCard() {
     console.log('Getting new card');
-    if (!currentCard || !nextCard) {
-        currentCard = randCard();
-        nextCard = randCard();
-    } else {
-        currentCard = nextCard;
-        nextCard = randCard();
-    }
-    console.log(unusedCards);
-    console.log(usedCards);
+
+    currentCard = nextCard;
+    nextCard = randCard();
+
     console.log(currentCard);
+    console.log(nextCard);
 }
 
 function randCard() {
@@ -157,7 +157,6 @@ function checkEmptyList() {
 }
 
 function setupCards() {
-    newCard();
     mainCard.getElementsByClassName('card-img')[0].src = currentCard.image;
     mainCard.getElementsByClassName('card-img')[0].alt = currentCard.image;
     mainCard
@@ -205,6 +204,7 @@ function moveCardAnimation() {
         element.style.animationName = 'Replace_Card' + i.toString();
         // element.style.animationIterationCount =
         //     Number(element.style.animationIterationCount) + 1;
+        element.style.animationIterationCount = 1;
     }
 }
 
