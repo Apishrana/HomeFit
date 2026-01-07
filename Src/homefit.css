@@ -116,31 +116,60 @@ main {
     /* animation: Like 1.5s ease; */
     /* animation: Skip 1.5s ease; */
     /* animation: Info 1.5s ease; */
+    animation-name: none;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 0;
 }
 .card:nth-child(2) {
     transform: scale(0.975) translateX(12px);
     z-index: 19;
     /* animation: Replace_Card1 1s ease 0.5s; */
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 .card:nth-child(3) {
     transform: scale(0.95) translateX(24px);
     z-index: 18;
     /* animation: Replace_Card2 1s ease 0.5s; */
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 .card:nth-child(4) {
     transform: scale(0.925) translateX(36px);
     z-index: 17;
     /* animation: Replace_Card3 1s ease 0.5s; */
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 .card:nth-child(5) {
     transform: scale(0.9) translateX(48px);
     z-index: 16;
     /* animation: Replace_Card4 1s ease 0.5s; */
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 .card:nth-child(6) {
     transform: scale(0.875) translateX(60px);
     z-index: 15;
     /* animation: Replace_Card5 1s ease 0.5s; */
+    animation-name: none;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 .card:nth-child(7) {
     transform: scale(0.875) translateX(60px);
@@ -399,7 +428,7 @@ main {
         opacity: 1;
     }
     100% {
-        transform: rotate(20deg) translate(1200px);
+        transform: rotate(20deg) translate(90vw);
         opacity: 0;
     }
 }
@@ -410,7 +439,7 @@ main {
         opacity: 1;
     }
     100% {
-        transform: rotate(-20deg) translate(-1200px);
+        transform: rotate(-20deg) translate(-90vw);
         opacity: 0;
     }
 }

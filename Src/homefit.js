@@ -105,16 +105,19 @@ let nextCard;
 function like() {
     likedCards.push(currentCard);
     console.log('Like');
+    likeAnimation();
     newCard();
 
     setupCards();
 }
 function info() {
+    infoAnimation();
     console.log('Info');
 }
 function skip() {
     skippedCards.push(currentCard);
     console.log('Skip');
+    skipAnimation();
     newCard();
 
     setupCards();
@@ -178,11 +181,38 @@ function setupCards() {
         'Health Score: ' + nextCard.healthScore;
 }
 
+function likeAnimation() {
+    mainCard.style.animationName = 'Like';
+    // mainCard.style.animationIterationCount =
+    //     Number(mainCard.style.animationIterationCount) + 1;
+    mainCard.style.animationIterationCount = 1;
+    moveCardAnimation();
+}
+
+function skipAnimation() {
+    mainCard.style.animationName = 'Skip';
+    // mainCard.style.animationIterationCount =
+    //     Number(mainCard.style.animationIterationCount) + 1;
+    mainCard.style.animationIterationCount = 1;
+    moveCardAnimation();
+}
+
+function infoAnimation() {}
+
+function moveCardAnimation() {
+    for (i = 1; i < domCards.length; i++) {
+        element = domCards[i];
+        element.style.animationName = 'Replace_Card' + i.toString();
+        // element.style.animationIterationCount =
+        //     Number(element.style.animationIterationCount) + 1;
+    }
+}
+
 const domCards = document.getElementsByClassName('card');
 
-let mainCard = domCards[0];
+const mainCard = domCards[0];
 
-let subMainCard = domCards[1];
+const subMainCard = domCards[1];
 
 newCard();
 setupCards();
