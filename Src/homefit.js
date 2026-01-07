@@ -103,6 +103,7 @@ let currentCard = randCard();
 let nextCard = randCard();
 
 function like() {
+    disableButtons();
     likedCards.push(currentCard);
     console.log('Like');
     likeAnimation();
@@ -110,12 +111,18 @@ function like() {
 
     setTimeout(setupCards, 1500);
     setTimeout(resetAnimation, 1500);
+    setTimeout(enableButtons, 1500);
 }
 function info() {
+    disableButtons();
     infoAnimation();
     console.log('Info');
+
+    setTimeout(resetAnimation, 1500);
+    setTimeout(enableButtons, 1500);
 }
 function skip() {
+    disableButtons();
     skippedCards.push(currentCard);
     console.log('Skip');
     skipAnimation();
@@ -123,6 +130,7 @@ function skip() {
 
     setTimeout(setupCards, 1500);
     setTimeout(resetAnimation, 1500);
+    setTimeout(enableButtons, 1500);
 }
 
 function newCard() {
@@ -190,7 +198,10 @@ function skipAnimation() {
     moveCardAnimation();
 }
 
-function infoAnimation() {}
+function infoAnimation() {
+    mainCard.style.animationName = 'Info';
+    mainCard.style.animationIterationCount = 1;
+}
 
 function moveCardAnimation() {
     for (i = 1; i < domCards.length; i++) {
@@ -205,9 +216,24 @@ function resetAnimation() {
         const element = domCards[index];
         element.style.animationName = 'none';
         element.style.animationIterationCount = 0;
-        console.log(element);
     }
 }
+
+function enableButtons() {
+    for (let index = 0; index < buttons.length; index++) {
+        const button = buttons[index];
+        button.style.pointerEvents = 'all';
+    }
+}
+
+function disableButtons() {
+    for (let index = 0; index < buttons.length; index++) {
+        const button = buttons[index];
+        button.style.pointerEvents = 'none';
+    }
+}
+
+const buttons = document.getElementsByClassName('interaction-button');
 
 const domCards = document.getElementsByClassName('card');
 
