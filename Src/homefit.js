@@ -108,9 +108,8 @@ function like() {
     likeAnimation();
     newCard();
 
-    setTimeout(() => {
-        setupCards();
-    }, 1500);
+    setTimeout(setupCards, 1500);
+    setTimeout(resetAnimation, 1500);
 }
 function info() {
     infoAnimation();
@@ -122,9 +121,8 @@ function skip() {
     skipAnimation();
     newCard();
 
-    setTimeout(() => {
-        setupCards();
-    }, 1500);
+    setTimeout(setupCards, 1500);
+    setTimeout(resetAnimation, 1500);
 }
 
 function newCard() {
@@ -182,16 +180,12 @@ function setupCards() {
 
 function likeAnimation() {
     mainCard.style.animationName = 'Like';
-    // mainCard.style.animationIterationCount =
-    //     Number(mainCard.style.animationIterationCount) + 1;
     mainCard.style.animationIterationCount = 1;
     moveCardAnimation();
 }
 
 function skipAnimation() {
     mainCard.style.animationName = 'Skip';
-    // mainCard.style.animationIterationCount =
-    //     Number(mainCard.style.animationIterationCount) + 1;
     mainCard.style.animationIterationCount = 1;
     moveCardAnimation();
 }
@@ -202,9 +196,16 @@ function moveCardAnimation() {
     for (i = 1; i < domCards.length; i++) {
         element = domCards[i];
         element.style.animationName = 'Replace_Card' + i.toString();
-        // element.style.animationIterationCount =
-        //     Number(element.style.animationIterationCount) + 1;
         element.style.animationIterationCount = 1;
+    }
+}
+
+function resetAnimation() {
+    for (let index = 0; index < domCards.length; index++) {
+        const element = domCards[index];
+        element.style.animationName = 'none';
+        element.style.animationIterationCount = 0;
+        console.log(element);
     }
 }
 
