@@ -119,7 +119,7 @@ function info() {
     console.log('Info');
 
     setTimeout(resetAnimation, 1500);
-    setTimeout(enableButtons, 1500);
+    setTimeout(loadInfo, 1500);
 }
 function skip() {
     disableButtons();
@@ -233,6 +233,13 @@ function disableButtons() {
     }
 }
 
+function loadInfo() {
+    mainCard.style.transform = 'translateY(-100px) scale(1.05)';
+    mainCard.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.4)';
+    mainCard.style.zIndex = 82;
+    // infoBox.style.display = 'block';
+}
+
 const buttons = document.getElementsByClassName('interaction-button');
 
 const domCards = document.getElementsByClassName('card');
@@ -240,6 +247,8 @@ const domCards = document.getElementsByClassName('card');
 const mainCard = domCards[0];
 
 const subMainCard = domCards[1];
+
+const infoBox = document.getElementById('info-box');
 
 newCard();
 setupCards();

@@ -189,6 +189,44 @@ main {
     align-items: center;
     gap: 24px;
 }
+
+.info-container {
+    display: none;
+    width: 30vw;
+    height: 300px;
+    position: fixed;
+    top: -250px;
+}
+.info-box {
+    height: inherit;
+    width: inherit;
+    border: #000 1px solid;
+    position: relative;
+    z-index: 80;
+    background-color: #f4f6fb;
+}
+/* .info-box table,
+th,
+td {
+    border: #000 1px solid;
+    border-collapse: collapse;
+} */
+.info-box th,
+td {
+    width: 15vw;
+}
+.info-box table {
+    height: 100%;
+}
+
+.info-close-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+
 .button-container {
     height: 80px;
     width: 800px;
@@ -197,7 +235,6 @@ main {
     align-items: center;
     gap: 40px;
 }
-
 .button-container button {
     font-size: 26px;
     width: 200px;
