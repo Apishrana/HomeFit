@@ -81,6 +81,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="button-container">
                 <button class="interaction-button" onclick="skip()">
                     Skip
@@ -92,34 +93,34 @@
                     Like
                 </button>
             </div>
+
             <div class="info-container" id="info-box">
                 <div class="info-box">
                     <table class="info-table">
                         <tr>
                             <th>Name</th>
-                            <td>Temp</td>
+                            <td class="info-data">Temp</td>
                         </tr>
                         <tr>
                             <th>Location</th>
-                            <td>Blr, India</td>
+                            <td class="info-data">Blr, India</td>
                         </tr>
                         <tr>
                             <th>Price</th>
-                            <td>₹ 28,000</td>
+                            <td class="info-data">₹ 28,000</td>
                         </tr>
                         <tr>
                             <th>Specifications</th>
-                            <td>2 BHK</td>
+                            <td class="info-data">2 BHK</td>
                         </tr>
                         <tr>
                             <th>Health Score</th>
-                            <td>82</td>
+                            <td class="info-data">82</td>
                         </tr>
                     </table>
-
-                    <!-- name: 'Temp', location: 'Blr, India', price: '28,000',
-                specifications: '2 BHK', healthScore: 82, -->
-                    <button class="info-close-button">X</button>
+                    <button class="info-close-button" onclick="unloadInfo()">
+                        X
+                    </button>
                 </div>
             </div>
         </main>

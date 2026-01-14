@@ -119,7 +119,7 @@ function info() {
     console.log('Info');
 
     setTimeout(resetAnimation, 1500);
-    setTimeout(loadInfo, 1500);
+    setTimeout(loadInfo, 1400);
 }
 function skip() {
     disableButtons();
@@ -236,8 +236,19 @@ function disableButtons() {
 function loadInfo() {
     mainCard.style.transform = 'translateY(-100px) scale(1.05)';
     mainCard.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.4)';
-    mainCard.style.zIndex = 82;
-    // infoBox.style.display = 'block';
+    infoDataElements[0].innerText = currentCard.name;
+    infoDataElements[1].innerText = currentCard.location;
+    infoDataElements[2].innerText = '₹ ' + currentCard.price;
+    infoDataElements[3].innerText = currentCard.specifications;
+    infoDataElements[4].innerText = currentCard.healthScore;
+    infoBox.style.display = 'block';
+}
+
+function unloadInfo() {
+    mainCard.style.transform = 'translateY(0) scale(1)';
+    mainCard.style.boxShadow = 'none';
+    infoBox.style.display = 'none';
+    enableButtons();
 }
 
 const buttons = document.getElementsByClassName('interaction-button');
@@ -249,6 +260,10 @@ const mainCard = domCards[0];
 const subMainCard = domCards[1];
 
 const infoBox = document.getElementById('info-box');
+
+const infoTable = infoBox.getElementsByClassName('info-table')[0];
+
+const infoDataElements = infoTable.getElementsByClassName('info-data');
 
 newCard();
 setupCards();
