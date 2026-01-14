@@ -118,8 +118,8 @@ function info() {
     infoAnimation();
     console.log('Info');
 
-    setTimeout(resetAnimation, 1500);
-    setTimeout(loadInfo, 1400);
+    setTimeout(resetAnimation, 1000);
+    setTimeout(loadInfo, 950);
 }
 function skip() {
     disableButtons();
@@ -189,18 +189,21 @@ function setupCards() {
 function likeAnimation() {
     mainCard.style.animationName = 'Like';
     mainCard.style.animationIterationCount = 1;
+    mainCard.style.animationDuration = '1.5s';
     moveCardAnimation();
 }
 
 function skipAnimation() {
     mainCard.style.animationName = 'Skip';
     mainCard.style.animationIterationCount = 1;
+    mainCard.style.animationDuration = '1.5s';
     moveCardAnimation();
 }
 
 function infoAnimation() {
     mainCard.style.animationName = 'Info';
     mainCard.style.animationIterationCount = 1;
+    mainCard.style.animationDuration = '1s';
 }
 
 function moveCardAnimation() {
@@ -216,6 +219,7 @@ function resetAnimation() {
         const element = domCards[index];
         element.style.animationName = 'none';
         element.style.animationIterationCount = 0;
+        mainCard.style.animationDuration = '1.5s';
     }
 }
 
