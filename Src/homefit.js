@@ -6,7 +6,7 @@ const allCards = [
         price: '28,000',
         specifications: '2 BHK',
         healthScore: 82,
-        image: '../assets/houses/house1.png',
+        image: './assets/houses/house1.png',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const allCards = [
         price: '40,000',
         specifications: '3 BHK',
         healthScore: 90,
-        image: '../assets/houses/house2.png',
+        image: './assets/houses/house2.png',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const allCards = [
         price: '18,000',
         specifications: '1 BHK',
         healthScore: 50,
-        image: '../assets/houses/house3.png',
+        image: './assets/houses/house3.png',
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const allCards = [
         price: '30,000',
         specifications: '3 BHK',
         healthScore: 82,
-        image: '../assets/houses/house4.png',
+        image: './assets/houses/house4.png',
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const allCards = [
         price: '22,000',
         specifications: '1 BHK',
         healthScore: 65,
-        image: '../assets/houses/house5.png',
+        image: './assets/houses/house5.png',
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const allCards = [
         price: '35,000',
         specifications: '2 BHK',
         healthScore: 88,
-        image: '../assets/houses/house6.png',
+        image: './assets/houses/house6.png',
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const allCards = [
         price: '45,000',
         specifications: '3 BHK',
         healthScore: 92,
-        image: '../assets/houses/house7.png',
+        image: './assets/houses/house7.png',
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const allCards = [
         price: '16,000',
         specifications: 'Studio',
         healthScore: 48,
-        image: '../assets/houses/house8.png',
+        image: './assets/houses/house8.png',
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const allCards = [
         price: '26,000',
         specifications: '2 BHK',
         healthScore: 72,
-        image: '../assets/houses/house9.png',
+        image: './assets/houses/house9.png',
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const allCards = [
         price: '55,000',
         specifications: '4 BHK',
         healthScore: 95,
-        image: '../assets/houses/house10.png',
+        image: './assets/houses/house10.png',
     },
 ];
 const unusedCards = [...allCards];
