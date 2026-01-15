@@ -191,12 +191,12 @@ main {
 }
 
 .info-container {
-    width: 30vw;
+    width: 35vw;
     display: none;
     position: relative;
 }
 .info-box {
-    width: 30vw;
+    width: inherit;
     height: 300px;
     border: #000 1px solid;
     z-index: 80;
@@ -212,7 +212,7 @@ td {
 } */
 .info-box th,
 td {
-    width: 15vw;
+    width: 50%;
 }
 .info-box table {
     height: 100%;
@@ -336,6 +336,12 @@ td {
     color: #666;
 }
 
+@media screen and (max-width: 900px) {
+    .info-container {
+        width: 50vw;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .footer-container {
         flex-direction: column;
@@ -368,6 +374,12 @@ td {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .info-container {
+        width: 60vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .button-container {
         height: 80px;
@@ -394,6 +406,9 @@ td {
         border-radius: 10px;
         font-size: 24px;
     }
+    .info-container {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -413,6 +428,9 @@ td {
 }
 
 @media screen and (max-width: 440px) {
+    .info-container {
+        width: 90vw;
+    }
     .nav {
         padding-top: 0;
         padding-right: 16px;
