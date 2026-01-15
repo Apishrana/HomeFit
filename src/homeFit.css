@@ -431,6 +431,9 @@ td {
     .info-container {
         width: 90vw;
     }
+    .info-close-button {
+        opacity: 1;
+    }
     .nav {
         padding-top: 0;
         padding-right: 16px;
