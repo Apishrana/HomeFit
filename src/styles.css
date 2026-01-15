@@ -400,6 +400,55 @@ main {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .card {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-img {
+        width: 208px;
+        height: 130px;
+    }
+
+    .cards {
+        width: 100vw;
+        height: auto;
+        top: -50px;
+    }
+
+    .card1 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card2 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card3 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card1:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+    .card2:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+    .card3:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+}
+
 @keyframes CardFadeIn {
     0% {
         opacity: 0;
