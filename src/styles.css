@@ -412,9 +412,11 @@ main {
     }
 
     .cards {
+        margin-top: 50px;
         width: 100vw;
         height: auto;
         top: -50px;
+        animation-name: CardFadeInMob;
     }
 
     .card1 {
@@ -454,6 +456,15 @@ main {
     100% {
         opacity: 1;
         transform: translateY(50px);
+    }
+}
+
+@keyframes CardFadeInMob {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
