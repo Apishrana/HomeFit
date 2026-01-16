@@ -11,7 +11,6 @@ body {
     flex-direction: column;
 }
 
-/*  NAV  */
 .nav {
     position: fixed;
     width: 100%;
@@ -76,7 +75,7 @@ body {
     filter: invert(1);
     transition: filter 0.3s ease;
 }
-/*  MAIN  */
+
 main {
     height: 100vh;
     display: flex;
@@ -114,9 +113,6 @@ main {
 }
 .card:nth-child(1) {
     z-index: 20;
-    /* animation: Like 1.5s ease; */
-    /* animation: Skip 1.5s ease; */
-    /* animation: Info 1.5s ease; */
     animation-name: none;
     animation-duration: 1.5s;
     animation-timing-function: ease;
@@ -125,7 +121,6 @@ main {
 .card:nth-child(2) {
     transform: scale(0.975) translateX(12px);
     z-index: 19;
-    /* animation: Replace_Card1 1s ease 0.5s; */
     animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -135,7 +130,6 @@ main {
 .card:nth-child(3) {
     transform: scale(0.95) translateX(24px);
     z-index: 18;
-    /* animation: Replace_Card2 1s ease 0.5s; */
     animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -145,7 +139,6 @@ main {
 .card:nth-child(4) {
     transform: scale(0.925) translateX(36px);
     z-index: 17;
-    /* animation: Replace_Card3 1s ease 0.5s; */
     animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -155,7 +148,6 @@ main {
 .card:nth-child(5) {
     transform: scale(0.9) translateX(48px);
     z-index: 16;
-    /* animation: Replace_Card4 1s ease 0.5s; */
     animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -165,7 +157,6 @@ main {
 .card:nth-child(6) {
     transform: scale(0.875) translateX(60px);
     z-index: 15;
-    /* animation: Replace_Card5 1s ease 0.5s; */
     animation-name: none;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -204,12 +195,6 @@ main {
     position: absolute;
     top: -350px;
 }
-/* .info-box table,
-th,
-td {
-    border: #000 1px solid;
-    border-collapse: collapse;
-} */
 .info-box th,
 td {
     width: 50%;
@@ -274,7 +259,6 @@ td {
     transition: all 0.5s ease;
 }
 
-/*  FOOTER  */
 .footer {
     margin-top: auto;
     padding-top: 40px;
@@ -364,13 +348,10 @@ td {
     .button-container {
         height: 80px;
         width: 600px;
-        /* gap: 40px; */
     }
     .button-container button {
         width: 150px;
         height: 60px;
-        /* font-size: 26px; */
-        /* border-radius: 12px; */
     }
 }
 
@@ -389,8 +370,6 @@ td {
     .button-container button {
         width: 120px;
         height: 60px;
-        /* font-size: 26px; */
-        /* border-radius: 12px; */
     }
 }
 

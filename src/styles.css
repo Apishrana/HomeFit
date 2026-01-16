@@ -11,7 +11,6 @@ body {
     flex-direction: column;
 }
 
-/*  NAV  */
 .nav {
     position: fixed;
     width: 100%;
@@ -76,7 +75,6 @@ body {
     transition: filter 0.3s ease;
 }
 
-/*  MAIN  */
 main {
     margin-top: 200px;
     margin-right: 240px;
@@ -199,7 +197,6 @@ main {
     z-index: 10;
 }
 
-/*  FOOTER  */
 .footer {
     margin-top: auto;
     padding-top: 40px;
@@ -457,7 +454,6 @@ main {
     100% {
         opacity: 1;
         transform: translateY(50px);
-        /* transform: translateX(-50px) translateY(50px); */
     }
 }
 

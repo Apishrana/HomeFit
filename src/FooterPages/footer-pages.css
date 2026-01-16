@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 .page-header {
     position: fixed;
     top: 0;
@@ -40,7 +39,6 @@ body {
     cursor: pointer;
 }
 
-/* content */
 .page-content {
     max-width: 900px;
     margin-top: 160px;
@@ -70,8 +68,6 @@ body {
     font-size: 18px;
     color: #333;
 }
-
-/* footer */
 
 .footer {
     margin-top: auto;
