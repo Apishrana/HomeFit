@@ -200,17 +200,17 @@ function like() {
     likeAnimation();
     newCard();
 
-    setTimeout(setupCards, 1500);
-    setTimeout(resetAnimation, 1500);
-    setTimeout(enableButtons, 1500);
+    setTimeout(setupCards, 1200);
+    setTimeout(resetAnimation, 1200);
+    setTimeout(enableButtons, 1200);
 }
 function info() {
     disableButtons();
     infoAnimation();
     console.log('Info');
 
-    setTimeout(resetAnimation, 1000);
-    setTimeout(loadInfo, 950);
+    setTimeout(resetAnimation, 700);
+    setTimeout(loadInfo, 500);
 }
 function skip() {
     disableButtons();
@@ -219,9 +219,9 @@ function skip() {
     skipAnimation();
     newCard();
 
-    setTimeout(setupCards, 1500);
-    setTimeout(resetAnimation, 1500);
-    setTimeout(enableButtons, 1500);
+    setTimeout(setupCards, 1200);
+    setTimeout(resetAnimation, 1200);
+    setTimeout(enableButtons, 1200);
 }
 
 function newCard() {
@@ -280,21 +280,21 @@ function setupCards() {
 function likeAnimation() {
     mainCard.style.animationName = 'Like';
     mainCard.style.animationIterationCount = 1;
-    mainCard.style.animationDuration = '1.5s';
+    mainCard.style.animationDuration = '1.2s';
     moveCardAnimation();
 }
 
 function skipAnimation() {
     mainCard.style.animationName = 'Skip';
     mainCard.style.animationIterationCount = 1;
-    mainCard.style.animationDuration = '1.5s';
+    mainCard.style.animationDuration = '1.2s';
     moveCardAnimation();
 }
 
 function infoAnimation() {
     mainCard.style.animationName = 'Info';
     mainCard.style.animationIterationCount = 1;
-    mainCard.style.animationDuration = '1s';
+    mainCard.style.animationDuration = '0.7s';
 }
 
 function moveCardAnimation() {
