@@ -1,0 +1,62 @@
+.login-brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-right: 80px;
+}
+
+.login-brand::after {
+    content: '';
+    width: 450px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+}
+
+.brand-logo {
+    width: 400px;
+}
+
+.brand-text {
+    font-family: 'Itim';
+    font-size: 78px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+@media (max-width: 1300px) {
+    .login-brand {
+        padding-right: 40px;
+    }
+    .login-brand::after {
+        width: 350px;
+    }
+    .brand-logo {
+        width: 300px;
+    }
+
+    .brand-text {
+        font-size: 64px;
+    }
+}
+@media (max-width: 900px) {
+    .login-brand {
+        padding-right: 0;
+    }
+}
+@media (max-width: 450px) {
+    .brand-logo {
+        width: 250px;
+    }
+
+    .brand-text {
+        font-size: 48px;
+    }
+    .login-brand::after {
+        width: 300px;
+    }
+}

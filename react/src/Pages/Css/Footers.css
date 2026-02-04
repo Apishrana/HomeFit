@@ -1,0 +1,83 @@
+.page-header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 80px;
+    padding-bottom: 0;
+    padding-left: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f4f6fb;
+    color: #333;
+    justify-content: flex-start;
+}
+.home-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: 'Itim';
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-content {
+    display: block;
+    max-width: 900px;
+    margin-top: 160px;
+    margin-right: auto;
+    margin-bottom: 160px;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+}
+
+.page-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.page-content h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.page-content p {
+    font-size: 18px;
+    color: #333;
+}
+
+@media screen and (max-width: 500px) {
+    .page-header {
+        padding-top: 0;
+        padding-right: 30px;
+        padding-bottom: 0;
+        padding-left: 30px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .page-content h1 {
+        font-size: 36px;
+    }
+
+    .page-content h2 {
+        font-size: 22px;
+    }
+
+    .page-content p {
+        font-size: 16px;
+    }
+}

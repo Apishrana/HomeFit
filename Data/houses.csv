@@ -1,0 +1,21 @@
+id,name,location,price,specifications,healthScore,image
+1,GreenView Residency,"Indiranagar, Bengaluru","28000",2 BHK,79,../assets/houses/house1.png
+2,Skyline Heights,"Whitefield, Bengaluru","40000",3 BHK,91,../assets/houses/house2.png
+3,Palm Grove Homes,"Yelahanka, Bengaluru","18000",1 BHK,54,../assets/houses/house3.png
+4,LakeView Enclave,"Jayanagar, Bengaluru","30000",3 BHK,84,../assets/houses/house4.png
+5,Urban Nest,"BTM Layout, Bengaluru","22000",1 BHK,67,../assets/houses/house5.png
+6,Silver Oak Apartments,"HSR Layout, Bengaluru","35000",2 BHK,88,../assets/houses/house6.png
+7,Emerald Heights,"Koramangala, Bengaluru","45000",3 BHK,93,../assets/houses/house7.png
+8,Studio One Central,"Electronic City, Bengaluru","16000",Studio,49,../assets/houses/house8.png
+9,Maple Residency,"Malleshwaram, Bengaluru","26000",2 BHK,73,../assets/houses/house9.png
+10,Prestige Grand Villas,"Sadashivanagar, Bengaluru","55000",4 BHK,96,../assets/houses/house10.png
+11,Sunrise Meadows,"Banashankari, Bengaluru","24000",2 BHK,71,../assets/houses/house11.png
+12,Crystal Park,"Rajajinagar, Bengaluru","32000",3 BHK,86,../assets/houses/house12.png
+13,Blue Horizon,"Marathahalli, Bengaluru","27000",2 BHK,75,../assets/houses/house13.png
+14,Oakwood Residency,"Hebbal, Bengaluru","29000",2 BHK,81,../assets/houses/house14.png
+15,Metro Studio Living,"MG Road, Bengaluru","20000",Studio,63,../assets/houses/house15.png
+16,Gardenia Homes,"Kengeri, Bengaluru","21000",1 BHK,69,../assets/houses/house16.png
+17,Royal Crest,"RT Nagar, Bengaluru","34000",3 BHK,87,../assets/houses/house17.png
+18,Serene Square,"JP Nagar, Bengaluru","31000",3 BHK,83,../assets/houses/house18.png
+19,Tech Park View,"Outer Ring Road, Bengaluru","38000",3 BHK,89,../assets/houses/house19.png
+20,Willow Creek,"Sarjapur Road, Bengaluru","25000",2 BHK,74,../assets/houses/house20.png

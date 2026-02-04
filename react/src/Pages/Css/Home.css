@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+    color: #111;
+    line-height: 1.6;
+}
+
+main {
+    margin-top: 200px;
+    margin-right: 240px;
+    margin-bottom: 240px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-heading {
+    font-size: 44px;
+    margin-bottom: 16px;
+    font-family: 'Abyssinica SIL';
+}
+
+.main-subheading {
+    font-size: 22px;
+    margin-bottom: 56px;
+    font-family: 'Abyssinica SIL';
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 72px;
+    font-size: 26px;
+    font-family: 'Abyssinica SIL';
+}
+
+.features li {
+    margin-bottom: 8px;
+}
+
+.cta-btn {
+    height: 48px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    border-radius: 8px;
+    border: 1px solid #111;
+    background: #fff;
+    cursor: pointer;
+    animation: Pulse 2s infinite;
+}
+
+.cta-btn:hover {
+    background-color: #111;
+    color: #fff;
+    animation: none;
+    transition: all 0.5s ease;
+}
+
+.cards {
+    position: relative;
+    margin-top: -16px;
+    right: 60px;
+    animation: CardFadeIn 1s ease forwards;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-color: #bdbdbd;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    /* x-off y-off blur(distance) color */
+}
+
+.card-img {
+    width: 320px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.card-disc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.card1 {
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg) translateX(48px);
+}
+
+.card2 {
+    left: 50%;
+    transform: translateX(-50%) rotate(-20deg);
+}
+
+.card3 {
+    left: 50%;
+    transform: translateX(-50%) rotate(-35deg) translateX(-48px);
+}
+.card1:hover {
+    transform: translateX(-50%) rotate(-5deg) translateX(48px) scale(1.05);
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+.card2:hover {
+    transform: translateX(-50%) rotate(-20deg) scale(1.05);
+    transition: transform 0.5s ease;
+    z-index: 10;
+}
+.card3:hover {
+    transform: translateX(-50%) rotate(-35deg) translateX(-48px) scale(1.05);
+    transition: transform 0.5s ease;
+    z-index: 10;
+}
+
+/* Responsive Design */
+
+/* Responsive Design */
+
+@media (max-width: 1100px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 96px;
+        margin-right: auto;
+        margin-bottom: 176px;
+        margin-left: auto;
+        gap: 64px;
+    }
+
+    .cards {
+        width: 400px;
+        height: 400px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        right: 0;
+        transform: translate(0);
+    }
+}
+@media screen and (max-width: 800px) {
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+    .card-img {
+        width: 240px;
+        height: 150px;
+    }
+    .cards {
+        top: 70px;
+        transform: translate(0);
+    }
+    .main-heading {
+        font-size: 36px;
+    }
+    .main-subheading {
+        font-size: 20px;
+    }
+    .features {
+        font-size: 20px;
+    }
+    .cta-btn {
+        font-size: 16px;
+        height: 42px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cards {
+        transform: translate(0);
+    }
+    .card {
+        width: 260px;
+        height: 260px;
+    }
+    .card-img {
+        width: 208px;
+        height: 130px;
+    }
+    .card-disc {
+        gap: 16px;
+        font-size: 16px;
+    }
+    .cards {
+        top: 100px;
+    }
+    .main-heading {
+        font-size: 28px;
+    }
+    .main-subheading {
+        font-size: 18px;
+    }
+    .features {
+        font-size: 18px;
+    }
+    .cta-btn {
+        font-size: 14px;
+        height: 38px;
+    }
+}
+@media screen and (max-width: 440px) {
+    main {
+        margin-top: 96px;
+        margin-right: 16px;
+        margin-bottom: 100px;
+    }
+    .card {
+        width: 220px;
+        height: 220px;
+    }
+    .card-img {
+        width: 180px;
+        height: 110px;
+    }
+    .card-disc {
+        gap: 12px;
+        font-size: 14px;
+    }
+    .cards {
+        top: 100px;
+        transform: translate(0);
+    }
+}
+@media screen and (max-width: 400px) {
+    .card {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-img {
+        width: 208px;
+        height: 130px;
+    }
+
+    .cards {
+        margin-top: 50px;
+        width: 100vw;
+        height: auto;
+        top: -50px;
+        animation-name: CardFadeInMob;
+    }
+
+    .card1 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card2 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card3 {
+        left: 0;
+        transform: translateX(0);
+    }
+    .card1:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+    .card2:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+    .card3:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+}
+
+/* Animations */
+
+@keyframes CardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(500px) translateY(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes CardFadeInMob {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
